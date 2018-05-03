@@ -2439,10 +2439,9 @@ body.off-canvas-sidebar-open .layout {
   top: 0px;
 }
 
-.marca-pais{
-  left: 250px;
-  position: absolute;
-  width: 100px;
+.marca-pais-header{
+  width: 40%;
+  margin-bottom: 20px;
 }
 
 .color-picker li a:hover,
@@ -2949,18 +2948,32 @@ body.off-canvas-sidebar-open .layout {
       width: 80px;
     }
 
-    .cifco{
+    .header-small .cifco{
       position: absolute;
       width: 65px;
       left: 120px;
       top: 4px !important;
     }
 
-    .marca-pais{
+    .cifco{
+      position: absolute;
+      width: 65px;
+      left: 120px;
+      top: 14px !important;
+    }
+
+    .header-small .marca-pais{
       left: 200px;
       position: absolute;
       width: 80px;
       top: 14px;
+    }
+
+    .marca-pais{
+      left: 200px;
+      position: absolute;
+      width: 80px;
+      top: 23px;
     }
 
     .header .container,
@@ -3202,6 +3215,18 @@ body.off-canvas-sidebar-open .layout {
     position: relative;
     padding: 250px 0;
 }
+
+.red{
+  background-color: #502398 !important;
+  padding: 150px 0 !important;
+}
+
+.blue{
+  background-color: #04a8dd !important;
+  padding: 150px 0 !important;
+}
+
+
 
 .module.module-divider-top,
 .module-sm.module-divider-top,
@@ -5401,6 +5426,6 @@ a[rel~="gallery"]:hover {
   color: white;
     font-weight: bold;
     font-size: 25px;
-    margin-top: 10px;
+    margin-top: 20px;
     letter-spacing: 5px;
 }
