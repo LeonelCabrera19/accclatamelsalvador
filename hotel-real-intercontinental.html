@@ -19,8 +19,14 @@
   <link href="assets/css/template.css" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118646043-1"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCotpAd1vT8v7lmiXBqnE7_naLTB_R8hEE&callback=initMap">
-  </script>
+
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+  
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -134,6 +140,7 @@
                       <div id="map"></div>
                       <script>
                         function initMap() {
+                          debugger
                           var uluru = { lat: 13.7072206, lng: -89.2132858 };
                           var map = new google.maps.Map(document.getElementById('map'), {
                             zoom: 16,
@@ -190,6 +197,8 @@
   <script src="assets/js/plugins.min.js"></script>
   <script src="assets/js/charts.js"></script>
   <script src="assets/js/custom.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCotpAd1vT8v7lmiXBqnE7_naLTB_R8hEE&callback=initMap">
+    </script>
 </body>
 
 </html>
