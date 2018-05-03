@@ -3226,10 +3226,9 @@ body.off-canvas-sidebar-open .layout {
   padding: 150px 0 !important;
 }
 
-.portfolio-item{
+.home .portfolio-item{
       height: 285px !important;
 }
-
 
 
 .module.module-divider-top,
@@ -3831,7 +3830,11 @@ body.off-canvas-sidebar-open .layout {
     width: 33.333333%;
     float: left;
     overflow: hidden;
-    height: 285px;
+}
+
+.row-portfolio.home .grid-sizer,
+.row-portfolio.home .portfolio-item {
+  height: 285px;
 }
 
 .row-portfolio[data-columns="2"] .grid-sizer,
@@ -3870,6 +3873,9 @@ body.off-canvas-sidebar-open .layout {
 .portfolio-wrapper img {
     -webkit-transition: all .3s cubic-bezier(.3, .1, .58, 1);
             transition: all .3s cubic-bezier(.3, .1, .58, 1);
+}
+
+.home .portfolio-wrapper img{
   height: 285px;
   width: 100% !important;
 }
